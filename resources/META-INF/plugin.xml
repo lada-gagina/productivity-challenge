@@ -1,0 +1,34 @@
+<idea-plugin>
+  <id>ProductivityChallenge</id>
+  <!-- working title -->
+  <name>Productivity Challenge</name>
+  <version>1.0</version>
+  <vendor email="lada.gagina@gmail.com">Lada</vendor>
+
+  <description><![CDATA[
+      <h1>ProductivityChallenge</h1>
+      This plugin is created to measure the percentage of code inserted by IDEA
+      vs the code written by yourself. It will also advise the most useful
+      actions and shortcuts for you.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <em>No change notes so far</em>
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="161.0"/>
+
+  <depends>com.intellij.modules.java</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+
+  <actions>
+    <group id="ProductivityChallenge.SampleMenu" text="_Productivity Challenge" description="Productivity info">
+      <add-to-group group-id="MainMenu" anchor="last"  />
+      <action id="ProductivityChallenge.ProductivityInfo" class="ProductivityInfo" text="_Productivity Info" description="Productivity info" />
+    </group>
+  </actions>
+
+</idea-plugin>
